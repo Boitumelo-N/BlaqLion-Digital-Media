@@ -56,34 +56,65 @@ body {
   justify-content: space-between;
 }
 
-/* 4. Navigation Bar Fix */
-.nav-links {
+.navbar {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  list-style: none;
+  justify-content: center; /* Centers the whole list on the page */
   padding: 20px 0;
+}
+
+.nav-links {
+  display: flex;          /* This is the magic line that makes them horizontal */
+  flex-direction: row;    /* Forces the row direction */
+  list-style: none;       /* Removes the bullet points */
   margin: 0;
+  padding: 0;
+  gap: 30px;              /* Creates even space between your links */
+  flex-wrap: nowrap;      /* Prevents them from jumping to a new line */
 }
 
 .nav-links li {
-  margin: 0 15px;
+  display: inline-block;  /* Extra insurance for horizontal alignment */
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #000;
   font-weight: 500;
+  white-space: nowrap;    /* Keeps "Work With Me" on one line */
+position: relative; 
+    padding: 5px 0; 
+    display: inline-block;
 }
 
-.left {
-  justify-content: flex-start;
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000; /* Or your brand color */
+    transition: all 0.3s ease-in-out;
 }
 
-.center {
-  justify-content: center;
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
-.right {
-  justify-content: flex-end;
+/* Style for "Work With Me" to make it feel more personal */
+.nav-cta {
+    border: 2px solid #000;
+    padding: 8px 18px;
+    border-radius: 2px; /* Sharp corners look more "Design Agency" */
+    font-weight: 700 !important;
 }
+
+.nav-cta:hover {
+    background: #000;
+    color: #fff !important;
+}
+
 
