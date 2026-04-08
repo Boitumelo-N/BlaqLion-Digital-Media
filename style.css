@@ -16,7 +16,8 @@ body {
   padding: 10px 5%;
   background: #ffffff;
   width: 100%;
-  box-sizing: border-box;        /* Ensures padding doesn't cause overflow */
+  box-sizing: border-box;   
+  color: #333;     /* Ensures padding doesn't cause overflow */
 }
 
 /* 2. The Three Sections (Left, Center, Right) */
@@ -47,10 +48,12 @@ body {
 
 .sub-heading {
   margin: 0;
-  font-family: sans-serif;       /* Or your brand font */
-  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;       /* Or your brand font */
+  font-size: 26px;
   text-transform: uppercase;     /* Professional agency look */
   letter-spacing: 1px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* 4. Navigation Bar Fix */
