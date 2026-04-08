@@ -1,0 +1,86 @@
+body {
+  background-color: grey;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+
+
+/* 1. The Header Container */
+.main-header {
+  display: flex;
+  justify-content: space-between; /* Pushes sections to the far left and right */
+  align-items: center;           /* Centers items vertically */
+  padding: 10px 5%;
+  background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;        /* Ensures padding doesn't cause overflow */
+}
+
+/* 2. The Three Sections (Left, Center, Right) */
+.header-section {
+  flex: 1;                       /* Forces all 3 divs to be exactly the same width */
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  justify-content: flex-start;   /* Keeps Logo on the far left */
+}
+
+.center {
+  justify-content: center;       /* Keeps middle empty or for future nav */
+}
+
+.right {
+  justify-content: flex-end;     /* Keeps "Digital Marketing" on the far right */
+}
+
+/* 3. The Elements */
+.logo {
+  height: 190px;                 /* Your preferred height */
+  width: auto;
+  display: block;
+}
+
+.sub-heading {
+  margin: 0;
+  font-family: sans-serif;       /* Or your brand font */
+  font-size: 1.2rem;
+  text-transform: uppercase;     /* Professional agency look */
+  letter-spacing: 1px;
+}
+
+/* 4. Navigation Bar Fix */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
