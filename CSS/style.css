@@ -213,70 +213,154 @@ body {
 }
 
 .meet-the-lion-page {
-  padding: 60px 10%;
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 50px 8%;
+  background: #fff;
 }
 
-.intro-banner {
+.lion-intro h1 {
+  font-size: clamp(3rem, 10vw, 6rem); /* Huge, responsive text */
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 0;
+  font-weight: 900;
 }
 
-.intro-banner h1 {
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
-
-.tagline {
-  font-style: italic;
-  color: #666;
+.fun-subtitle {
+  text-align: center;
+  font-family:
+    "Courier New", Courier, monospace; /* Looks like a typewriter/secret file */
+  color: #ff9900;
+  margin-bottom: 60px;
   font-size: 1.2rem;
 }
 
-.about-content {
-  display: flex;
-  gap: 60px;
-  align-items: flex-start;
-}
-
-/* THE RELIABLE IMAGE GRID */
-.image-collage {
-  flex: 1.2;
+/* THE RELIABLE, UNCROPPED GRID */
+.visual-story {
+  flex: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr); /* Two neat columns */
   gap: 20px;
+  max-width: 600px; /* Adjust this to make the images smaller or larger overall */
+  margin: 0 auto;
 }
 
-.collage-item img {
-  width: 100%;
-  height: auto; /* No more tiny or cut-off images */
+.photo-card {
+  position: relative;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 4px 4px 0px #000;
+  height: fit-content;
+}
+
+/* Tilt every other image slightly for that "fun" look */
+.photo-card:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.photo-card:nth-child(odd) {
+  transform: rotate(-1.5deg);
+}
+
+.photo-card img {
+  width: 100%; /* Stretches to the width of the column */
+  height: auto; /* Keeps it from looking squashed */
   display: block;
+  object-fit: contain; /* Extra insurance against cropping */
+}
+
+.photo-card img {
+  max-height: 450px;
+}
+
+.caption {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* SKILLS STICKERS */
+.skills-stickers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.sticker {
+  background: #000;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.sticker:hover {
+  background: #ff9900;
+  transform: translateY(-5px);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #eee;
+  text-align: center;
+  transition: 0.3s ease;
+  color: black;
+}
+
+.service-card:hover {
+  border-color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: #871756;
+}
+
+/* PRICING SECTION */
+.pricing-cta {
+  background: #000;
+  color: #fff;
+  padding: 60px;
+  text-align: center;
   border-radius: 4px;
 }
 
-/* Make your graduation photo (the foundation) stand out */
-.grad {
-  grid-column: 1 / 3;
+.btn-download {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 35px;
+  background: #871756; /* Your brand gold/orange */
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
 }
 
-.bio-text {
-  flex: 1;
-}
-
-.bio-text h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  border-left: 4px solid #000;
-  padding-left: 15px;
-}
-
-.bio-text p {
-  line-height: 1.8;
-  color: #444;
-  margin-bottom: 20px;
+.btn-download:hover {
+  background: #fff;
+  transform: scale(1.05);
 }
 
 footer {
