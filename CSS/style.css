@@ -337,6 +337,15 @@ body {
   color: #871756;
 }
 
+.artist-mgmt {
+  background: #000;
+  color: #fff;
+}
+
+.artist-mgmt p {
+  color: #ccc;
+}
+
 /* PRICING SECTION */
 .pricing-cta {
   background: #000;
