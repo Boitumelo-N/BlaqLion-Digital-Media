@@ -122,4 +122,98 @@ position: relative;
     left: 0;
 }
 
+.hero {
+    height: 80vh; /* Takes up most of the screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+    padding: 0 5%;
+}
+
+.hero-content h1 {
+    font-size: 4rem; /* Big and bold */
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero-content h1 span {
+    color: #871756; /* Your brand accent color */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Button Styles */
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #000;
+    color: #fff;
+}
+
+.btn-secondary {
+    border: 2px solid #000;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background: #333;
+}
+
+.services-overview {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 10%;
+    background: #fdfdfd; /* Very subtle off-white to separate from the hero */
+    gap: 40px;
+}
+
+.service-box {
+    flex: 1;
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffffff;
+    border: 1px solid #eee; /* Light border for a clean, boutique look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px); /* Lifts the box up slightly when hovering */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-color: #000; /* Border darkens to show focus */
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #871756;
+}
+
+.service-box p {
+    color: black;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+footer {
+  text-align: center;
+}
+
 
