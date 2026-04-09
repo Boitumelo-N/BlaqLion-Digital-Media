@@ -466,7 +466,7 @@ h1 {
 }
 
 .trait:hover {
-  background: #871756;
+  background: #b1578e;
   transform: translateY(-5px) scale(1.05);
 }
 
@@ -475,11 +475,29 @@ h1 {
   color: #fff;
 }
 
+.services-hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background: #ffffff;
+}
+
+.services-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.services-hero p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
-  margin-bottom: 80px;
+  padding: 60px 10%;
+  background: #f5f5f7;
 }
 
 .service-card {
@@ -506,7 +524,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  color: #871756;
+  color: #b1578e;
 }
 
 .artist-mgmt {
@@ -518,30 +536,81 @@ h1 {
   color: #ccc;
 }
 
-/* PRICING SECTION */
-.pricing-cta {
-  background: #000;
-  color: #fff;
-  padding: 60px;
+.process {
   text-align: center;
-  border-radius: 4px;
+  padding: 80px 20px;
+  background: #ffffff;
+  color: #000;
+}
+
+.process h2 {
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.steps div {
+  background: #f5f5f7;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.steps div:hover {
+  background: #b1578e;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.pricing-cta {
+  background: linear-gradient(135deg, #b1578e);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pricing-cta h2 {
+  margin-bottom: 15px;
+}
+
+.pricing-cta p {
+  margin-bottom: 25px;
+  color: #f1f1f1;
 }
 
 .btn-download {
   display: inline-block;
-  margin-top: 25px;
   padding: 15px 35px;
-  background: #871756; /* Your brand gold/orange */
-  color: #000;
+  background: #fff;
+  color: #b1578e;
   text-decoration: none;
   font-weight: bold;
-  text-transform: uppercase;
+  border-radius: 4px;
   transition: 0.3s;
 }
 
 .btn-download:hover {
-  background: #fff;
+  background: #000;
+  color: #fff;
   transform: scale(1.05);
+}
+
+.services-final-cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #b1578e;
+  color: #fff;
+}
+
+.services-final-cta h2 {
+  margin-bottom: 20px;
 }
 
 .about-me-fun {
