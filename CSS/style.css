@@ -1,5 +1,5 @@
 body {
-  background-color: #0d0d0d; /* deep black */
+  background-color: #aaa; /* deep black */
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -9,13 +9,10 @@ body {
 /* 1. The Header Container */
 .main-header {
   display: flex;
-  justify-content: space-between; /* Pushes sections to the far left and right */
-  align-items: center; /* Centers items vertically */
-  padding: 10px 5%;
-  background: #ffffff;
-  width: 100%;
-  box-sizing: border-box;
-  color: #333; /* Ensures padding doesn't cause overflow */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #fdfdfd;
 }
 
 /* 2. The Three Sections (Left, Center, Right) */
@@ -46,19 +43,48 @@ body {
 
 .sub-heading {
   margin: 0;
-  font-family: "Montserrat", sans-serif; /* Or your brand font */
-  font-size: 22px;
-  text-transform: uppercase; /* Professional agency look */
-  letter-spacing: 1px;
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: #aaa;
+  text-transform: uppercase;
   align-items: center;
   justify-content: space-between;
+}
+
+.cta-btn {
+  background: #b1578e;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #da2dd8;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
 }
 
 .navbar {
   width: 100%;
   display: flex;
-  justify-content: center; /* Centers the whole list on the page */
   padding: 20px 0;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-links a::after {
+  background-color: #b1578e; /* brand accent now */
 }
 
 .nav-links {
@@ -102,19 +128,6 @@ body {
   left: 0;
 }
 
-/* Style for "Work With Me" to make it feel more personal */
-.nav-cta {
-  border: 2px solid #000;
-  padding: 8px 18px;
-  border-radius: 2px; /* Sharp corners look more "Design Agency" */
-  font-weight: 700 !important;
-}
-
-.nav-cta:hover {
-  background: #000;
-  color: #fff !important;
-}
-
 .nav-links a.active::after {
   width: 100%;
   left: 0;
@@ -126,15 +139,18 @@ h1 {
 
 .section-title {
   color: black;
+  text-align: center;
 }
 
 .hero {
-  height: 80vh; /* Takes up most of the screen */
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #ffffff;
+  background: #fdfdfd;
+  background-size: cover;
+  background-position: center;
   padding: 0 5%;
 }
 
@@ -146,7 +162,7 @@ h1 {
 }
 
 .hero-content h1 span {
-  color: #871756; /* Your brand accent color */
+  color: #b1578e; /* Your brand accent color */
 }
 
 .hero-content p {
@@ -186,7 +202,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   padding: 80px 10%;
-  background: #fdfdfd; /* Very subtle off-white to separate from the hero */
+  background: #fdfdfd;
   gap: 40px;
 }
 
@@ -194,8 +210,9 @@ h1 {
   flex: 1;
   text-align: center;
   padding: 40px 20px;
-  background: #ffffff;
-  border: 1px solid #eee; /* Light border for a clean, boutique look */
+  background: #fdfdfd;
+  border: 1px solid #222;
+  color: #fff;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -203,8 +220,8 @@ h1 {
 
 .service-box:hover {
   transform: translateY(-10px); /* Lifts the box up slightly when hovering */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  border-color: #000; /* Border darkens to show focus */
+  border-color: #871756;
+  box-shadow: 0 10px 30px rgba(135, 23, 86, 0.2);
 }
 
 .service-box h3 {
