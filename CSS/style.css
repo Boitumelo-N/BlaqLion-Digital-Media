@@ -1,215 +1,401 @@
 body {
-  background-color: grey;
-  color: white;
+  background-color: #aaa; /* deep black */
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0; /* remove that 20px */
 }
-
-
 
 /* 1. The Header Container */
 .main-header {
   display: flex;
-  justify-content: space-between; /* Pushes sections to the far left and right */
-  align-items: center;           /* Centers items vertically */
-  padding: 10px 5%;
-  background: #ffffff;
-  width: 100%;
-  box-sizing: border-box;   
-  color: #333;     /* Ensures padding doesn't cause overflow */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #fdfdfd;
 }
 
 /* 2. The Three Sections (Left, Center, Right) */
 .header-section {
-  flex: 1;                       /* Forces all 3 divs to be exactly the same width */
+  flex: 1; /* Forces all 3 divs to be exactly the same width */
   display: flex;
   align-items: center;
 }
 
 .left {
-  justify-content: flex-start;   /* Keeps Logo on the far left */
+  justify-content: flex-start; /* Keeps Logo on the far left */
 }
 
 .center {
-  justify-content: center;       /* Keeps middle empty or for future nav */
+  justify-content: center; /* Keeps middle empty or for future nav */
 }
 
 .right {
-  justify-content: flex-end;     /* Keeps "Digital Marketing" on the far right */
+  justify-content: flex-end; /* Keeps "Digital Marketing" on the far right */
 }
 
 /* 3. The Elements */
 .logo {
-  height: 190px;                 /* Your preferred height */
+  height: 190px; /* Your preferred height */
   width: auto;
   display: block;
 }
 
 .sub-heading {
   margin: 0;
-  font-family: "Montserrat", sans-serif;       /* Or your brand font */
   font-size: 26px;
-  text-transform: uppercase;     /* Professional agency look */
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  color: #aaa;
+  text-transform: uppercase;
   align-items: center;
   justify-content: space-between;
+}
+
+.cta-btn {
+  background: #b1578e;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #da2dd8;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
 }
 
 .navbar {
   width: 100%;
   display: flex;
-  justify-content: center; /* Centers the whole list on the page */
   padding: 20px 0;
 }
 
+.nav-links a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-links a::after {
+  background-color: #b1578e; /* brand accent now */
+}
+
 .nav-links {
-  display: flex;          /* This is the magic line that makes them horizontal */
-  flex-direction: row;    /* Forces the row direction */
-  list-style: none;       /* Removes the bullet points */
+  display: flex; /* This is the magic line that makes them horizontal */
+  flex-direction: row; /* Forces the row direction */
+  list-style: none; /* Removes the bullet points */
   margin: 0;
   padding: 0;
-  gap: 30px;              /* Creates even space between your links */
-  flex-wrap: nowrap;      /* Prevents them from jumping to a new line */
+  gap: 30px; /* Creates even space between your links */
+  flex-wrap: nowrap; /* Prevents them from jumping to a new line */
 }
 
 .nav-links li {
-  display: inline-block;  /* Extra insurance for horizontal alignment */
+  display: inline-block; /* Extra insurance for horizontal alignment */
+  margin: 0 10px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
-  white-space: nowrap;    /* Keeps "Work With Me" on one line */
-position: relative; 
-    padding: 5px 0; 
-    display: inline-block;
+  white-space: nowrap; /* Keeps "Work With Me" on one line */
+  position: relative;
+  padding: 5px 0;
+  display: inline-block;
 }
 
-
 .nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: #000; /* Or your brand color */
-    transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #000; /* Or your brand color */
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-links a:hover::after {
-    width: 100%;
-    left: 0;
-}
-
-/* Style for "Work With Me" to make it feel more personal */
-.nav-cta {
-    border: 2px solid #000;
-    padding: 8px 18px;
-    border-radius: 2px; /* Sharp corners look more "Design Agency" */
-    font-weight: 700 !important;
-}
-
-.nav-cta:hover {
-    background: #000;
-    color: #fff !important;
+  width: 100%;
+  left: 0;
 }
 
 .nav-links a.active::after {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
+}
+
+h1 {
+  color: black;
+}
+
+.section-title {
+  color: black;
+  text-align: center;
 }
 
 .hero {
-    height: 80vh; /* Takes up most of the screen */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: #ffffff;
-    padding: 0 5%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fdfdfd;
+  background-size: cover;
+  background-position: center;
+  padding: 0 5%;
 }
 
 .hero-content h1 {
-    font-size: 4rem; /* Big and bold */
-    line-height: 1.1;
-    margin-bottom: 20px;
-    font-weight: 800;
+  font-size: 4rem; /* Big and bold */
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: 800;
 }
 
 .hero-content h1 span {
-    color: #871756; /* Your brand accent color */
+  color: #b1578e; /* Your brand accent color */
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    color: #555;
-    max-width: 700px;
-    margin: 0 auto 40px;
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px;
 }
 
 /* Button Styles */
-.btn-primary, .btn-secondary {
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: 0.3s;
-    margin: 0 10px;
-    display: inline-block;
+.btn-primary,
+.btn-secondary {
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+  margin: 0 10px;
+  display: inline-block;
 }
 
 .btn-primary {
-    background: #000;
-    color: #fff;
+  background: #000;
+  color: #fff;
 }
 
 .btn-secondary {
-    border: 2px solid #000;
-    color: #000;
+  border: 2px solid #000;
+  color: #000;
 }
 
 .btn-primary:hover {
-    background: #333;
+  background: #333;
 }
 
 .services-overview {
-    display: flex;
-    justify-content: space-around;
-    padding: 80px 10%;
-    background: #fdfdfd; /* Very subtle off-white to separate from the hero */
-    gap: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 10%;
+  background: #fdfdfd;
+  gap: 40px;
 }
 
 .service-box {
-    flex: 1;
-    text-align: center;
-    padding: 40px 20px;
-    background: #ffffff;
-    border: 1px solid #eee; /* Light border for a clean, boutique look */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  text-align: center;
+  padding: 40px 20px;
+  background: #fdfdfd;
+  border: 1px solid #222;
+  color: #fff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .service-box:hover {
-    transform: translateY(-10px); /* Lifts the box up slightly when hovering */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    border-color: #000; /* Border darkens to show focus */
+  transform: translateY(-10px); /* Lifts the box up slightly when hovering */
+  border-color: #871756;
+  box-shadow: 0 10px 30px rgba(135, 23, 86, 0.2);
 }
 
 .service-box h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #871756;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #871756;
 }
 
 .service-box p {
-    color: black;
-    line-height: 1.6;
-    font-size: 0.95rem;
+  color: black;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.meet-the-lion-page {
+  padding: 50px 8%;
+  background: #fff;
+}
+
+.lion-intro h1 {
+  font-size: clamp(3rem, 10vw, 6rem); /* Huge, responsive text */
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+.fun-subtitle {
+  text-align: center;
+  font-family:
+    "Courier New", Courier, monospace; /* Looks like a typewriter/secret file */
+  color: #ff9900;
+  margin-bottom: 60px;
+  font-size: 1.2rem;
+}
+
+/* THE RELIABLE, UNCROPPED GRID */
+.visual-story {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two neat columns */
+  gap: 20px;
+  max-width: 600px; /* Adjust this to make the images smaller or larger overall */
+  margin: 0 auto;
+}
+
+.photo-card {
+  position: relative;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 4px 4px 0px #000;
+  height: fit-content;
+}
+
+/* Tilt every other image slightly for that "fun" look */
+.photo-card:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.photo-card:nth-child(odd) {
+  transform: rotate(-1.5deg);
+}
+
+.photo-card img {
+  width: 100%; /* Stretches to the width of the column */
+  height: auto; /* Keeps it from looking squashed */
+  display: block;
+  object-fit: contain; /* Extra insurance against cropping */
+}
+
+.photo-card img {
+  max-height: 450px;
+}
+
+.caption {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* SKILLS STICKERS */
+.skills-stickers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.sticker {
+  background: #000;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.sticker:hover {
+  background: #ff9900;
+  transform: translateY(-5px);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #eee;
+  text-align: center;
+  transition: 0.3s ease;
+  color: black;
+}
+
+.service-card:hover {
+  border-color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: #871756;
+}
+
+.artist-mgmt {
+  background: #000;
+  color: #fff;
+}
+
+.artist-mgmt p {
+  color: #ccc;
+}
+
+/* PRICING SECTION */
+.pricing-cta {
+  background: #000;
+  color: #fff;
+  padding: 60px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 35px;
+  background: #871756; /* Your brand gold/orange */
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-download:hover {
+  background: #fff;
+  transform: scale(1.05);
 }
 
 .about-me-fun {
@@ -302,5 +488,3 @@ position: relative;
 footer {
   text-align: center;
 }
-
-
