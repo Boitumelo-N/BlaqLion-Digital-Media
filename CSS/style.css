@@ -335,7 +335,7 @@ h1 {
   text-align: center;
   font-family:
     "Courier New", Courier, monospace; /* Looks like a typewriter/secret file */
-  color: #ff9900;
+  color: #b1578e;
   margin-bottom: 60px;
   font-size: 1.2rem;
 }
@@ -406,7 +406,7 @@ h1 {
 }
 
 .sticker:hover {
-  background: #ff9900;
+  background: #b1578e;
   transform: translateY(-5px);
 }
 
