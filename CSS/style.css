@@ -758,7 +758,7 @@ h1 {
   content: "";
   width: 0;
   height: 2px;
-  background: #871756;
+  background: #b1578e;
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -773,7 +773,7 @@ h1 {
   text-align: center;
   margin-top: 20px;
   font-size: 0.85rem;
-  color: #777;
+  color: #222;
 }
 
 footer {
