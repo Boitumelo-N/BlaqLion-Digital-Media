@@ -320,24 +320,24 @@ h1 {
 }
 
 .meet-the-lion-page {
-  padding: 50px 8%;
-  background: #fff;
+   padding: 60px 8%;
+  background: #ffffff;
 }
 
 .lion-intro h1 {
-  font-size: clamp(3rem, 10vw, 6rem); /* Huge, responsive text */
+  font-size: clamp(3rem, 8vw, 5rem);
   text-align: center;
-  margin-bottom: 0;
   font-weight: 900;
+  margin-bottom: 10px;
+  color: #b1578e;
 }
 
 .fun-subtitle {
   text-align: center;
-  font-family:
-    "Courier New", Courier, monospace; /* Looks like a typewriter/secret file */
-  color: #b1578e;
-  margin-bottom: 60px;
   font-size: 1.2rem;
+  color: black;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
 }
 
 /* THE RELIABLE, UNCROPPED GRID */
@@ -357,6 +357,11 @@ h1 {
   border: 1px solid #ddd;
   box-shadow: 4px 4px 0px #000;
   height: fit-content;
+}
+
+.photo-card:hover {
+  transform: scale(1.05) rotate(0deg); /* straightens + zooms */
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Tilt every other image slightly for that "fun" look */
@@ -380,12 +385,37 @@ h1 {
 }
 
 .caption {
-  display: block;
+ display: block;
   margin-top: 10px;
   font-size: 0.8rem;
-  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.lion-story {
+  max-width: 800px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.lion-story h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.lion-story p {
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.lion-personality {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f5f5f7;
+  color: #000;
 }
 
 /* SKILLS STICKERS */
@@ -396,6 +426,11 @@ h1 {
   margin-top: 30px;
 }
 
+.lion-skills {
+  text-align: center;
+  margin: 80px 0;
+}
+
 .sticker {
   background: #000;
   color: #fff;
@@ -403,11 +438,41 @@ h1 {
   border-radius: 50px;
   font-size: 0.9rem;
   transition: 0.3s;
+   max-width: 600px;
+  margin: 30px auto 0;
+
 }
 
 .sticker:hover {
   background: #b1578e;
   transform: translateY(-5px);
+}
+
+.personality-traits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.trait {
+  background: #000;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.trait:hover {
+  background: #871756;
+  transform: translateY(-5px) scale(1.05);
+}
+
+.btn-primary:hover {
+  background: #b1578e;
+  color: #fff;
 }
 
 .services-grid {
