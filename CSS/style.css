@@ -320,7 +320,7 @@ h1 {
 }
 
 .meet-the-lion-page {
-   padding: 60px 8%;
+  padding: 60px 8%;
   background: #ffffff;
 }
 
@@ -385,7 +385,7 @@ h1 {
 }
 
 .caption {
- display: block;
+  display: block;
   margin-top: 10px;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -438,9 +438,8 @@ h1 {
   border-radius: 50px;
   font-size: 0.9rem;
   transition: 0.3s;
-   max-width: 600px;
+  max-width: 600px;
   margin: 30px auto 0;
-
 }
 
 .sticker:hover {
@@ -776,6 +775,48 @@ h1 {
   color: #222;
 }
 
+.work-hero {
+  text-align: center;
+  padding: 100px 20px 80px; /* more breathing room */
+  background: #ffffff;
+}
+
+.work-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.work-hero p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.work-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.work-nav a {
+  padding: 10px 18px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.work-nav a:hover {
+  background: #da2dd8;
+  color: #fff;
+  border-color: #da2dd8;
+}
+
 .work-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -849,6 +890,14 @@ h1 {
   height: 350px; /* taller than images */
   object-fit: cover;
   display: block;
+}
+
+.portfolio-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: black; /* brand color */
+  position: relative;
 }
 
 footer {
