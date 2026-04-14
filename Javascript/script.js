@@ -1,21 +1,25 @@
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
+console.log("JS is connected");
+const images = document.querySelectorAll(".clickable");
+console.log(images.length);
 
-document.querySelectorAll(".clickable").forEach((img) => {
-  img.addEventListener("click", () => {
-    lightbox.style.display = "flex";
-    lightboxImg.src = img.src;
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  document.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", function () {
+      lightbox.style.display = "flex";
+      lightboxImg.src = this.src;
+    });
   });
-});
 
-// close when clicking X
-document.querySelector(".close").addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
-
-// close when clicking outside image
-lightbox.addEventListener("click", (e) => {
-  if (e.target !== lightboxImg) {
+  document.querySelector(".close").addEventListener("click", function () {
     lightbox.style.display = "none";
-  }
+  });
+
+  lightbox.addEventListener("click", function (e) {
+    if (e.target !== lightboxImg) {
+      lightbox.style.display = "none";
+    }
+  });
 });
