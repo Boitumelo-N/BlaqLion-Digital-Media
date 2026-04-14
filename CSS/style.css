@@ -844,6 +844,7 @@ h1 {
   object-fit: contain;
   background: #fff;
   padding: 10px;
+   pointer-events: auto;
 }
 
 .project-card:hover img {
@@ -926,6 +927,15 @@ h1 {
 
 .lightbox.active img {
   transform: scale(1);
+}
+
+#close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
 }
 
 .lightbox .close {
