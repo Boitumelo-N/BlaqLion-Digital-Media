@@ -867,30 +867,12 @@ h1 {
    cursor: pointer;
 }
 
-.project-card:hover::after {
-  content: "View";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #871756;
-  color: #fff;
-  padding: 5px 10px;
-  font-size: 0.7rem;
-}
+
 
 .logo-fit {
   object-fit: contain !important;
   background: #fff; /* or #000 depending on logo */
   padding: 20px;
-}
-
-.project-tag {
-  display: inline-block;
-  background: #b1578e;
-  color: #fff;
-  padding: 4px 10px;
-  font-size: 0.7rem;
-  margin-bottom: 10px;
 }
 
 .project-card video {
@@ -916,7 +898,7 @@ h1 {
   position: relative;
 }
 
-.lightbox {
+#lightbox {
   position: fixed;
   top: 0;
   left: 0;
@@ -927,8 +909,13 @@ h1 {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+   transform: scale(0.9);
+  transition: transform 0.3s ease;
 }
 
 .lightbox.active {
@@ -936,12 +923,6 @@ h1 {
   opacity: 1;
 }
 
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  transform: scale(0.9);
-  transition: transform 0.3s ease;
-}
 
 .lightbox.active img {
   transform: scale(1);
