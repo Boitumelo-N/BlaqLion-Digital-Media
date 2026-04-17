@@ -1,3 +1,4 @@
+/* ================= GLOBAL ================= */
 body {
   background-color: #aaa; /* deep black */
   color: #ffffff;
@@ -88,7 +89,14 @@ section {
 }
 
 .nav-links a::after {
-  background-color: #b1578e; /* brand accent now */
+  background-color: #b1578e;
+ content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+ /* brand accent now */
 }
 
 .nav-links {
@@ -869,7 +877,6 @@ h1 {
 }
 
 
-
 .logo-fit {
   object-fit: contain !important;
   background: #fff; /* or #000 depending on logo */
@@ -924,7 +931,6 @@ h1 {
   opacity: 1;
 }
 
-
 .lightbox.active img {
   transform: scale(1);
 }
@@ -961,3 +967,4 @@ h1 {
 footer {
   text-align: center;
 }
+
