@@ -877,7 +877,7 @@ h1 {
 }
 
 
-.logo-fit {
+.logos {
   object-fit: contain !important;
   background: #fff; /* or #000 depending on logo */
   padding: 20px;
